@@ -86,7 +86,7 @@ The project utilizes GitLab CI/CD for automated testing, building, and linting. 
 The GitLab CI/CD pipeline is configured to generate an optimized Rust binary. After successful builds, you can download the binary as an artifact from the pipeline page on GitLab.
 
 ## Video Demonstration
-[Click here to watch the video demonstration](https://www.youtube.com/your-demo-link) 
+[Click here to watch the video demonstration](https://youtu.be/TA_TSB0uwNo) 
 
 ## Sample Images
 
