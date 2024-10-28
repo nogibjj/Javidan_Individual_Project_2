@@ -1,8 +1,9 @@
+[![CI/CD](https://github.com/nogibjj/Javidan_Individual_Project_2/actions/workflows/main.yaml/badge.svg)](https://github.com/nogibjj/Javidan_Individual_Project_2/actions/workflows/main.yaml)
 
 # Rust CLI Project with SQLite Integration
 
 ## Overview
-This project demonstrates the power of Rust by implementing a command-line interface (CLI) that interacts with a SQLite database. It includes Create, Read, Update, and Delete (CRUD) operations, showcasing the capabilities of Rust in building efficient and safe software. Additionally, this project uses Github Actions to test, build, and lint the Rust codebase, generating an optimized Rust binary as an artifact.
+This project demonstrates the power of Rust by implementing a command-line interface (CLI) that interacts with a SQLite database. It includes Create, Read, Update, and Delete (CRUD) operations, load the csv into SQLite database,  showcasing the capabilities of Rust in building efficient and safe software. Additionally, this project uses Github Actions to test, build, and lint the Rust codebase, generating an optimized Rust binary as an artifact.
 
 ## Key Features
 - **CRUD Operations with SQLite**: Interact with a local SQLite database using Rust.
@@ -75,10 +76,11 @@ In the development process, an LLM (Language Learning Model) was utilized to ref
    ```
 
 ## GitHub Actions
-The project utilizes GitLab CI/CD for automated testing, building, and linting. The configuration file (`.gitlab-ci.yml`) includes jobs to:
+The project utilizes GitLab CI/CD for automated testing, building, and linting. The configuration file (`.github/workflows/main.yml`) includes jobs to:
 - Test the codebase to ensure that all functionalities work as expected.
 - Build the optimized binary to be provided as an artifact.
 - Lint the code using Clippy to maintain code quality.
+- Format the code using rustfmt
 
 ## Optimized Rust Binary
 The GitLab CI/CD pipeline is configured to generate an optimized Rust binary. After successful builds, you can download the binary as an artifact from the pipeline page on GitLab.
@@ -86,6 +88,24 @@ The GitLab CI/CD pipeline is configured to generate an optimized Rust binary. Af
 ## Video Demonstration
 [Click here to watch the video demonstration](https://www.youtube.com/your-demo-link) 
 
+## Sample Images
+
+**Rust CLI Insert**
+![Run Example Console Output](https://github.com/nogibjj/Javidan_Individual_Project_2/blob/ae1c063839c6440b9d85a5d7a0a13685c9733b46/data/insert.png)
+
+
+**Rust CLI Read**
+![Run Example Console Output](https://github.com/nogibjj/Javidan_Individual_Project_2/blob/ae1c063839c6440b9d85a5d7a0a13685c9733b46/data/read.png)
+
+
+**Rust CLI Update**
+![Run Example Console Output](https://github.com/nogibjj/Javidan_Individual_Project_2/blob/ae1c063839c6440b9d85a5d7a0a13685c9733b46/data/update.png)
+
+
+**Rust CLI Delete**
+![Run Example Console Output](https://github.com/nogibjj/Javidan_Individual_Project_2/blob/ae1c063839c6440b9d85a5d7a0a13685c9733b46/data/delete.png)
+
+
 
 ## License
-This project is licensed under the MIT License - see the [LICENSE](./LICENSE) file for details.
+This project is licensed under the MIT License - see the [LICENSE](https://github.com/nogibjj/Javidan_Individual_Project_2/blob/ae1c063839c6440b9d85a5d7a0a13685c9733b46/LICENSE.txt) file for details.
