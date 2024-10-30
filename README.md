@@ -94,15 +94,15 @@ The GitLab CI/CD pipeline is configured to generate an optimized Rust binary. Af
 ## Sample Images
 
 **Rust CLI Insert**
-![Run Example Console Output](https://github.com/nogibjj/Javidan_Individual_Project_2/blob/ae1c063839c6440b9d85a5d7a0a13685c9733b46/data/insert_with_metrics.png)
+![Run Example Console Output](https://github.com/nogibjj/Javidan_Individual_Project_2/blob/8403094688a690df2ec67597cefa72d06524366e/data/insert_with_metrics.png)
 
 
 **Rust CLI Read**
-![Run Example Console Output](https://github.com/nogibjj/Javidan_Individual_Project_2/blob/ae1c063839c6440b9d85a5d7a0a13685c9733b46/data/read_with_metrics.png)
+![Run Example Console Output](https://github.com/nogibjj/Javidan_Individual_Project_2/blob/8403094688a690df2ec67597cefa72d06524366e/data/read_with_metrics.png)
 
 
 **Rust CLI Update**
-![Run Example Console Output](https://github.com/nogibjj/Javidan_Individual_Project_2/blob/ae1c063839c6440b9d85a5d7a0a13685c9733b46/data/update_with_metrics.png)
+![Run Example Console Output](https://github.com/nogibjj/Javidan_Individual_Project_2/blob/8403094688a690df2ec67597cefa72d06524366e/data/update_with_metrics.png)
 
 
 **Rust CLI Delete**
