@@ -10,6 +10,9 @@ This project demonstrates the power of Rust by implementing a command-line inter
 - **Optimized Binary**: Automated process to generate an optimized binary using GitLab Actions.
 - **Automated Testing, Building, and Linting**: Implemented GitLab Actions to ensure code quality and maintainability using centralized Makefile.
 
+## Performance metrics 
+This project is intended to demonstrate simple CRUD operations, as these types of operations are considered lightweight and not ideal for direct performance comparisons. The Python code performing the same operations can be found in this repository ([![GithubLink](https://github.com/nogibjj/Javidan_Karimli_IDS706_PythonInteractWithSql)]) and also executes in a short amount of time. Although direct measurements are not provided in this case, the Rust code is technically much faster than the Python code under heavy load. This is because Rust uses a compilation-based approach that converts all the code into a binary format executable directly by the OS on multiple cores and threads. In contrast, Python relies on an interpreter that scans the code during runtime, and the GIL (Global Interpreter Lock) prevents true multicore execution. Performance measurements for the Rust code can be found in the Sample Images section below.
+
 ## How LLM was Used
 In the development process, an LLM (Language Learning Model) was utilized to refactor the initial Python code into Rust. It assisted in generating efficient, idiomatic Rust code and ensuring adherence to best practices in error handling and memory management. Additionally, the LLM provided guidance on using Rust's syntax effectively for function-based implementations.
 

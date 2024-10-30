@@ -1,5 +1,7 @@
 use clap::{Parser, Subcommand};
 use rusqlite::{Connection, Result};
+use rustc_serialize::base64::{FromBase64, ToBase64, STANDARD};
+use std::io;
 
 #[derive(Parser, Debug)]
 #[command(version, about, long_about = None)]
@@ -46,6 +48,8 @@ enum Commands {
 
 fn main() -> Result<()> {
     let args = Cli::parse();
+    let start = std::time::Instant::now();
+    let mem_info_before = sys_info::mem_info().unwrap();
 
     // Establish database connection
     let conn = Connection::open("data/sqlite_db.sqlite")?;
@@ -87,7 +91,17 @@ fn main() -> Result<()> {
             rust_main::delete_record(&conn, id)?;
             println!("Deleted record with ID: {}", id);
         }
-    }
+        
+    };
+    
+    let duration = start.elapsed();
+    let mem_info_after = sys_info::mem_info().unwrap();
+    let mem_used = mem_info_after.total - mem_info_before.total;
+    
+    println!("Time taken: {:?}", duration);
+    println!("Memory used: {}", mem_used);
+
+
 
     Ok(()) 
 }
